@@ -1,64 +1,92 @@
 span {
-    color: white;
+  color: white;
+  background-color: transparent;
 }
 
 .title {
-    font-size: 6vw; /* Usando viewport units para tornar o título responsivo */
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+  font-size: 6vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
+
+
 .subtitle {
-    font-size: 3vw; /* Usando viewport units para tornar o subtítulo responsivo */
-    margin-top: 10px;
-    font-weight: 100;
-    font-family: 'Roboto', sans-serif;
+  font-size: 3vw;
+  margin-top: 10px;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header-container {
-    position: relative;
-    max-width: 100%; /* Defina o valor desejado */
+  position: relative;
+  padding: 0;
+  overflow: hidden;
 }
 
-.header-container img {
-    display: block;
-    width: 100%;
-    height: auto;
+
+.background-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* A imagem cobrirá a área mantendo a proporção */
 }
 
-.texto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1; /* Coloque o valor do z-index maior que o da imagem para o texto ficar na frente */
-    background-color: transparent;
+.header-info .title {
+  position: absolute;
+  bottom: 20vw;
+  right: 50%;
+  top:10vw;
+  left:42%;
 }
 
-.grid-item span{
-    background-color: transparent;
-} 
+.header-info .subtitle {
+  position: absolute;
+  bottom: 18vw;
+  right: 32%;
+}
+
+
 
 /* Media queries para ajustar o tamanho do texto em tamanhos de tela diferentes */
 @media screen and (max-width: 768px) {
   .title {
-    font-size: 8vw;
+      font-size: 8vw;
   }
 
   .subtitle {
-    font-size: 3vw;
+      font-size: 3vw;
+
+  }
+
+  .header-info .title {
+    bottom: 20vw;
+    top:12vw;
+  }
+  .header-info .subtitle {
+    bottom: 12vw;
+    right: 30%;
   }
 }
 
 @media screen and (max-width: 414px) {
-    .title {
-      font-size: 12vw;
-      margin-top:5px;
-    }
-  
-    .subtitle {
-      font-size: 4vw;
-      margin-bottom:15px;
-    }
+  .title {
+      font-size: 8vw;
+      margin-top: 5px;
   }
+
+  .subtitle {
+      font-size: 4vw;
+      margin-bottom: 15px;
+      bottom:10vw;
+  }
+
+  .header-info .title {
+    bottom: 20vw;
+    top:12vw;
+  }
+  .header-info .subtitle {
+    bottom: 5vw;
+    right: 25%;
+  }
+}
