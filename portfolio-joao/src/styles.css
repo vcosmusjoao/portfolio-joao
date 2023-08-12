@@ -78,13 +78,13 @@ h1{
 p{
     color: white;
     font-family:'Roboto',sans-serif ;
-    font-weight: 400;
+    font-weight: 300;
+    line-height: normal; 
 }
 
 .grid-container {
     display: flex;
     flex-wrap: wrap;
-   
   }
   
   /* Defina as colunas */
@@ -145,4 +145,15 @@ p{
   }
 
 
-  
+  button {
+    background-color: #AD5E2A;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 1px solid #AD5E2A; /* Border com a mesma cor do fundo para simplicidade */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    border-radius: 5px; /* Você pode ajustar esse valor conforme necessário */
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);  /* Comentado para remover o efeito de sombra */
+    margin-top:10px;
+}
