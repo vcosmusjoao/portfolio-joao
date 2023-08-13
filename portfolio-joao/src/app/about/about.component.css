@@ -1,0 +1,52 @@
+.about-section{
+    margin-top: 5vw;
+}
+
+button{
+    margin-bottom:15px;
+}
+
+h1{
+    margin-bottom:5px;
+}
+
+@media screen and (max-width: 414px) {
+    h1,p{
+        text-align: center;
+        margin-bottom:10px;
+    }
+    img{
+        max-width: 300px;
+        display: block; /* Tornar a imagem um bloco para aplicar margens horizontais */
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1,p{
+        text-align: center;
+        margin-bottom:10px;
+    }
+    img{
+        max-width: 300px;
+        display: block; /* Tornar a imagem um bloco para aplicar margens horizontais */
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 1200px) {
+
+    p{
+        font-size:12px;
+        margin-bottom:5px;
+    }
+
+    img{
+        height:240px;
+    }
+
+   button{
+    padding:10px;
+    font-size:12px;
+   }
+ 
+}
