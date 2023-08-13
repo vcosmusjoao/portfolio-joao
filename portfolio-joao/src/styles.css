@@ -70,7 +70,7 @@ table {
   }
 
 h1{
-    font-size: 40;
+    font-size: 20px;
     color:white;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -81,6 +81,7 @@ p{
     font-family:'Roboto',sans-serif ;
     font-weight: 300;
     line-height: normal; 
+
 }
 
 .grid-container {
