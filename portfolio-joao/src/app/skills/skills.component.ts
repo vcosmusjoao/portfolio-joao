@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
 
+  skills:any =[
+    { name: 'CSS' },
+    { name: ' Html' },
+    { name: 'Java' },
+    { name: 'C#' },
+    { name: '.NET' },
+    { name: 'Spring' },
+  ]
+
 }
