@@ -1,1 +1,24 @@
-<p>last-projects works!</p>
+
+<div class="container">
+    <div class="last-projects-section">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <h1>Meus Últimos Projetos</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="projects-container">
+                    <div class="project-card" *ngFor="let project of lastProjects">
+                        <img [src]="project.urlImagem" alt="{{ project.name }}">
+                        <div class="project-details">
+                            <p>{{ project.name }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
