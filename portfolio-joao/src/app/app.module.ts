@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { LastProjectsComponent } from './last-projects/last-projects.component';
+import { HttpClientModule } from '@angular/common/http'; 
+
+
 
 @NgModule({
   declarations: [
@@ -16,11 +19,12 @@ import { LastProjectsComponent } from './last-projects/last-projects.component';
     HeaderComponent,
     AboutComponent,
     SkillsComponent,
-    LastProjectsComponent
+    LastProjectsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

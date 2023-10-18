@@ -12,13 +12,17 @@
             <div class="col-md-10">
                 <div class="projects-container">
                     <div class="project-card" *ngFor="let project of lastProjects">
-                        <img [src]="project.urlImagem" alt="{{ project.name }}">
+                        <img [src]="project.urlImagem" alt="{{ project.nome }}">
                         <div class="project-details">
-                            <p>{{ project.name }}</p>
+                            <p>{{ project.nome }}</p>
                         </div>
+                    </div>
+                    <div class="col-md-12 empty-message text- center mt-3" *ngIf="lastProjects.length === 0">
+                       <p>Nenhum projeto disponível no momento.</p> 
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
