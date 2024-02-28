@@ -20,20 +20,4 @@ export class SkillsComponent implements OnInit{
     ]
   }
 
-  
-
-  
-
-  
-
-  skills:any =[
-    { name: 'CSS' },
-    { name: ' Html' },
-    { name: '.NET' },
-    { name: 'Spring Boot' },
-    { name: 'Angular' },
-    { name: 'SQL' },
-
-  ]
-
 }
