@@ -10,10 +10,11 @@ export class SkillsComponent {
   skills:any =[
     { name: 'CSS' },
     { name: ' Html' },
-    { name: 'Java' },
-    { name: 'C#' },
     { name: '.NET' },
-    { name: 'Spring' },
+    { name: 'Spring Boot' },
+    { name: 'Angular' },
+    { name: 'SQL' },
+
   ]
 
 }
