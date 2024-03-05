@@ -12,7 +12,6 @@ export class LastProjectsComponent implements OnInit{
   ngOnInit(){
     this.portfolioService.getUltimosProjetos().subscribe((data: any[]) =>{
       this.lastProjects = data;
-      console.log(this.lastProjects);
     });
   }
 
