@@ -1,5 +1,5 @@
-class LastProject{
-    Nome: string;
-    URLImagem: string;
-    Link: string;
+class lastProject{
+    nome!: string;
+    urlImagem!: string;
+    linkProject!: string;
 }
